@@ -9,6 +9,7 @@
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 function GameBoyAdvanceEmulator() {
+    console.log("AgbEMU GBAE func: Attempted")
     this.settings = {
         "SKIPBoot":false,                   //Skip the BIOS boot screen.
         "audioVolume":1,                    //Starting audio volume.
@@ -28,6 +29,7 @@ function GameBoyAdvanceEmulator() {
     this.offscreenHeight = 160;               //Height of the GBA screen.
     this.BIOS = [];                           //Initialize BIOS as not existing.
     this.ROM = [];                            //Initialize BIOS as not existing.
+    console.log("AgbEMU GBAE func: Set ROM and BIOS settings!")
     //Cache some frame buffer lengths:
     this.offscreenRGBCount = ((this.offscreenWidth | 0) * (this.offscreenHeight | 0) * 3) | 0;
     //Graphics buffers to generate in advance:

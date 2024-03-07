@@ -188,8 +188,10 @@ var Mixer = null;
 var MixerInput = null;
 var timerID = null;
 window.onload = function () {
+    console.log("GML Attempt1")
     if (!games[location.hash.substr(1)]) {
-        alert("Invalid game request!");
+        console.log("InvGameReq: EC#1")
+        alert("An error has occured. Please Check the console for more info.");
         return;
     }
     //Initialize Iodine:
