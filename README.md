@@ -13,3 +13,5 @@ This emulator has a built-in higher performance mode (OverChargeMode). It allows
 5. Manually enabling OCM from the developer console. Go to sources and edit launcher.html. Replace its contents with launcherOCM.html.
 
 **I only recommend using OCM if you are actually experiencing issues. It can speed up the game too much for devices already running high fps counts as it determines the run speed by the amount of fps you get. If you are experiencing visual issues or other problems, it may be due to smooth mode being enabled. Although this can be disabled, it must be done within your own fork or using the EA version.**
+
+The audio module is somewhat bugged, mainly when the page refreshes. This is known but a fix is currently not being worked on.
